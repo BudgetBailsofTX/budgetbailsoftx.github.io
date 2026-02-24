@@ -1,85 +1,231 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact | Budget Bail Bonds®™</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<!-- FULL CONTACT & AGENT SECTION -->
 
 <style>
-:root{
---primary:#0B1F3B;
---accent:#1C3D7A;
---gold:#C6A85B;
---bg:#F3F6FA;
+#contact-section {
+  background:#0f1a2b;
+  color:white;
+  padding:80px 20px;
+  position:relative;
+  overflow:hidden;
+  font-family:'Inter', sans-serif;
 }
 
-body{margin:0;font-family:'Inter',sans-serif;background:var(--bg);}
-
-header{
-background:var(--primary);
-color:white;
-padding:22px 40px;
-display:flex;
-justify-content:space-between;
-align-items:center;
+/* Texas Seal Watermark */
+#contact-section::before {
+  content:"";
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:700px;
+  height:700px;
+  background:url('https://upload.wikimedia.org/wikipedia/commons/0/0b/Seal_of_Texas.svg') no-repeat center;
+  background-size:contain;
+  opacity:0.04;
+  transform:translate(-50%, -50%);
+  z-index:0;
 }
 
-nav a{
-color:white;
-margin-left:20px;
-text-decoration:none;
+.contact-wrapper {
+  max-width:1200px;
+  margin:auto;
+  position:relative;
+  z-index:2;
 }
 
-nav a:hover{color:var(--gold);}
-
-.hero{
-background:linear-gradient(rgba(11,31,59,.85),rgba(28,61,122,.85)),
-url('https://images.unsplash.com/photo-1574781330855-d0db8cc6a79b?q=80&w=2070');
-background-size:cover;
-background-position:center;
-color:white;
-padding:100px 20px;
-text-align:center;
+.intake-number {
+  text-align:center;
+  font-size:32px;
+  font-weight:bold;
+  margin-bottom:60px;
 }
 
-.section{
-max-width:1000px;
-margin:auto;
-padding:70px 20px;
+.intake-number a {
+  color:#d4af37;
+  text-decoration:none;
 }
 
-.panel{
-background:white;
-padding:35px;
-border-radius:10px;
-box-shadow:0 12px 30px rgba(0,0,0,0.05);
-margin-bottom:25px;
+.agent-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
 }
 
-footer{
-background:var(--primary);
-color:white;
-text-align:center;
-padding:40px 20px;
-font-size:14px;
+.agent-card {
+  background:#1c2b45;
+  padding:25px;
+  border-radius:14px;
+  text-align:center;
+  transition:all .3s ease;
+  box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.agent-card:hover {
+  transform:translateY(-6px);
+  box-shadow:0 15px 35px rgba(0,0,0,0.5);
+}
+
+.agent-card img {
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:15px;
+  border:3px solid #d4af37;
+}
+
+.agent-card h4 {
+  margin:10px 0 5px;
+}
+
+.agent-card p {
+  margin:4px 0;
+  font-size:14px;
+}
+
+.agent-card a {
+  color:#d4af37;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.financial-card {
+  grid-column:span 2;
+  background:#243657;
+}
+
+.form-section {
+  margin-top:80px;
+  background:#16243b;
+  padding:40px;
+  border-radius:14px;
+}
+
+.form-section h3 {
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.form-section input,
+.form-section textarea {
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  border-radius:6px;
+  border:none;
+}
+
+.form-section button {
+  width:100%;
+  padding:14px;
+  background:#d4af37;
+  color:#0f1a2b;
+  font-weight:bold;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.form-section button:hover {
+  background:white;
 }
 </style>
-</head>
 
-<body>
+<section id="contact-section">
+  <div class="contact-wrapper">
 
-<header>
-<div style="font-family:'Playfair Display',serif;">Budget Bail Bonds®™</div>
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="contact.html">Contact</a>
-<a href="legal.html">Legal</a>
-</nav>
-</header>
+    <h2 style="text-align:center; font-size:34px; margin-bottom:10px;">
+      24-Hour Jail Inmate Intake
+    </h2>
 
-<div class="hero">
-<h2>
+    <div class="intake-number">
+      <a href="tel:+12545955493">+1 (254) 595-5493</a>
+    </div>
+
+    <div class="agent-grid">
+
+      <!-- Steve -->
+      <div class="agent-card">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg">
+        <h4>Steve Scottes</h4>
+        <p>Senior Licensed Bond Agent</p>
+        <p>License #TX-44721</p>
+        <a href="tel:+12549098871">+1 (254) 909-8871</a>
+      </div>
+
+      <!-- Randy -->
+      <div class="agent-card">
+        <img src="https://randomuser.me/api/portraits/men/45.jpg">
+        <h4>Randy Marshalls</h4>
+        <p>Licensed Bond Agent</p>
+        <p>License #TX-55284</p>
+        <a href="tel:+12546098671">+1 (254) 609-8671</a>
+      </div>
+
+      <!-- Erik -->
+      <div class="agent-card">
+        <img src="https://randomuser.me/api/portraits/men/51.jpg">
+        <h4>Erik Walters</h4>
+        <p>Licensed Bond Agent</p>
+        <p>License #TX-66019</p>
+        <a href="tel:+12549992301">+1 (254) 999-2301</a>
+      </div>
+
+      <!-- Sandria -->
+      <div class="agent-card">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg">
+        <h4>Sandria Ramirez</h4>
+        <p>Licensed Bond Agent</p>
+        <p>License #TX-70312</p>
+        <a href="tel:+12542285961">+1 (254) 228-5961</a>
+      </div>
+
+      <!-- Sara -->
+      <div class="agent-card">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg">
+        <h4>Sara Parker</h4>
+        <p>Assistant Bond Agent</p>
+        <p>License #TX-81109</p>
+        <a href="tel:+12147742204">+1 (214) 774-2204</a>
+      </div>
+
+      <!-- Darryl -->
+      <div class="agent-card">
+        <img src="https://randomuser.me/api/portraits/men/73.jpg">
+        <h4>Darryl Meeks</h4>
+        <p>Assistant Bond Agent</p>
+        <p>License #TX-82457</p>
+        <a href="tel:+12546382185">+1 (254) 638-2185</a>
+      </div>
+
+      <!-- Financial -->
+      <div class="agent-card financial-card">
+        <img src="https://randomuser.me/api/portraits/men/22.jpg">
+        <h4>Wes Jordan</h4>
+        <p>Chief Financial Administrator</p>
+        <p>License #TX-FIN-9901</p>
+
+        <p style="margin-top:15px; font-weight:bold;">Payment Processing</p>
+        <a href="tel:+19728002340">+1 (972) 800-2340</a>
+
+        <p style="margin-top:15px; font-weight:bold;">Payment Policy, Trouble & Returns</p>
+        <a href="tel:+19728005540">+1 (972) 800-5540</a>
+      </div>
+
+    </div>
+
+    <!-- Contact Form -->
+    <div class="form-section">
+      <h3>Request Immediate Assistance</h3>
+
+      <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="tel" placeholder="Your Phone Number" required>
+        <input type="text" placeholder="Inmate Name (If Applicable)">
+        <textarea rows="4" placeholder="Brief Description of Situation"></textarea>
+        <button type="submit">Submit Request</button>
+      </form>
+    </div>
+
+  </div>
+</section>
