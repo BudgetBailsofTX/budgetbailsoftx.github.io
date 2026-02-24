@@ -1,231 +1,185 @@
-<!-- FULL CONTACT & AGENT SECTION -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Budget Bail Bonds®™</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-#contact-section {
-  background:#0f1a2b;
-  color:white;
-  padding:80px 20px;
-  position:relative;
-  overflow:hidden;
-  font-family:'Inter', sans-serif;
+:root{
+--primary:#0f1a2b;
+--accent:#1c2b45;
+--gold:#d4af37;
+--bg:#f4f6f9;
 }
 
-/* Texas Seal Watermark */
-#contact-section::before {
-  content:"";
-  position:absolute;
-  top:50%;
-  left:50%;
-  width:700px;
-  height:700px;
-  background:url('https://upload.wikimedia.org/wikipedia/commons/0/0b/Seal_of_Texas.svg') no-repeat center;
-  background-size:contain;
-  opacity:0.04;
-  transform:translate(-50%, -50%);
-  z-index:0;
+body{
+margin:0;
+font-family:'Inter',sans-serif;
+background:var(--bg);
+color:#1b1b1b;
 }
 
-.contact-wrapper {
-  max-width:1200px;
-  margin:auto;
-  position:relative;
-  z-index:2;
+header{
+background:var(--primary);
+color:white;
+padding:20px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
-.intake-number {
-  text-align:center;
-  font-size:32px;
-  font-weight:bold;
-  margin-bottom:60px;
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-size:14px;
 }
 
-.intake-number a {
-  color:#d4af37;
-  text-decoration:none;
+nav a:hover{color:var(--gold);}
+
+.hero{
+background:var(--primary);
+color:white;
+text-align:center;
+padding:60px 20px;
+position:relative;
 }
 
-.agent-grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:30px;
+.hero::after{
+content:"";
+position:absolute;
+top:50%;
+left:50%;
+width:600px;
+height:600px;
+background:url('https://upload.wikimedia.org/wikipedia/commons/0/0b/Seal_of_Texas.svg') no-repeat center;
+background-size:contain;
+opacity:0.05;
+transform:translate(-50%, -50%);
 }
 
-.agent-card {
-  background:#1c2b45;
-  padding:25px;
-  border-radius:14px;
-  text-align:center;
-  transition:all .3s ease;
-  box-shadow:0 10px 25px rgba(0,0,0,0.3);
+.section{
+max-width:1000px;
+margin:auto;
+padding:60px 20px;
 }
 
-.agent-card:hover {
-  transform:translateY(-6px);
-  box-shadow:0 15px 35px rgba(0,0,0,0.5);
+.card{
+background:white;
+padding:30px;
+margin-bottom:25px;
+border-radius:8px;
+box-shadow:0 8px 20px rgba(0,0,0,0.05);
 }
 
-.agent-card img {
-  width:110px;
-  height:110px;
-  border-radius:50%;
-  object-fit:cover;
-  margin-bottom:15px;
-  border:3px solid #d4af37;
+h2,h3{
+margin-top:0;
 }
 
-.agent-card h4 {
-  margin:10px 0 5px;
+.agent-block{
+margin-bottom:15px;
 }
 
-.agent-card p {
-  margin:4px 0;
-  font-size:14px;
-}
-
-.agent-card a {
-  color:#d4af37;
-  text-decoration:none;
-  font-weight:bold;
-}
-
-.financial-card {
-  grid-column:span 2;
-  background:#243657;
-}
-
-.form-section {
-  margin-top:80px;
-  background:#16243b;
-  padding:40px;
-  border-radius:14px;
-}
-
-.form-section h3 {
-  text-align:center;
-  margin-bottom:30px;
-}
-
-.form-section input,
-.form-section textarea {
-  width:100%;
-  padding:12px;
-  margin-bottom:15px;
-  border-radius:6px;
-  border:none;
-}
-
-.form-section button {
-  width:100%;
-  padding:14px;
-  background:#d4af37;
-  color:#0f1a2b;
-  font-weight:bold;
-  border:none;
-  border-radius:6px;
-  cursor:pointer;
-  transition:.3s;
-}
-
-.form-section button:hover {
-  background:white;
+footer{
+background:var(--primary);
+color:white;
+text-align:center;
+padding:30px 20px;
+font-size:13px;
 }
 </style>
+</head>
 
-<section id="contact-section">
-  <div class="contact-wrapper">
+<body>
 
-    <h2 style="text-align:center; font-size:34px; margin-bottom:10px;">
-      24-Hour Jail Inmate Intake
-    </h2>
+<header>
+<div><strong>Budget Bail Bonds®™</strong></div>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+<a href="legal.html">Legal</a>
+</nav>
+</header>
 
-    <div class="intake-number">
-      <a href="tel:+12545955493">+1 (254) 595-5493</a>
-    </div>
+<div class="hero">
+<h2>24-Hour Jail Inmate Intake</h2>
+<p style="font-size:22px; font-weight:bold;">+1 (254) 595-5493</p>
+</div>
 
-    <div class="agent-grid">
+<div class="section">
 
-      <!-- Steve -->
-      <div class="agent-card">
-        <img src="https://randomuser.me/api/portraits/men/32.jpg">
-        <h4>Steve Scottes</h4>
-        <p>Senior Licensed Bond Agent</p>
-        <p>License #TX-44721</p>
-        <a href="tel:+12549098871">+1 (254) 909-8871</a>
-      </div>
+<div class="card">
+<h3>Licensed Agent Directory</h3>
 
-      <!-- Randy -->
-      <div class="agent-card">
-        <img src="https://randomuser.me/api/portraits/men/45.jpg">
-        <h4>Randy Marshalls</h4>
-        <p>Licensed Bond Agent</p>
-        <p>License #TX-55284</p>
-        <a href="tel:+12546098671">+1 (254) 609-8671</a>
-      </div>
+<div class="agent-block">
+<strong>Steve Scottes</strong><br>
+Senior Licensed Bond Agent<br>
+License #TX-44721<br>
++1 (254) 909-8871
+</div>
 
-      <!-- Erik -->
-      <div class="agent-card">
-        <img src="https://randomuser.me/api/portraits/men/51.jpg">
-        <h4>Erik Walters</h4>
-        <p>Licensed Bond Agent</p>
-        <p>License #TX-66019</p>
-        <a href="tel:+12549992301">+1 (254) 999-2301</a>
-      </div>
+<div class="agent-block">
+<strong>Randy Marshalls</strong><br>
+Licensed Bond Agent<br>
+License #TX-55284<br>
++1 (254) 609-8671
+</div>
 
-      <!-- Sandria -->
-      <div class="agent-card">
-        <img src="https://randomuser.me/api/portraits/women/65.jpg">
-        <h4>Sandria Ramirez</h4>
-        <p>Licensed Bond Agent</p>
-        <p>License #TX-70312</p>
-        <a href="tel:+12542285961">+1 (254) 228-5961</a>
-      </div>
+<div class="agent-block">
+<strong>Erik Walters</strong><br>
+Licensed Bond Agent<br>
+License #TX-66019<br>
++1 (254) 999-2301
+</div>
 
-      <!-- Sara -->
-      <div class="agent-card">
-        <img src="https://randomuser.me/api/portraits/women/44.jpg">
-        <h4>Sara Parker</h4>
-        <p>Assistant Bond Agent</p>
-        <p>License #TX-81109</p>
-        <a href="tel:+12147742204">+1 (214) 774-2204</a>
-      </div>
+<div class="agent-block">
+<strong>Sandria Ramirez</strong><br>
+Licensed Bond Agent<br>
+License #TX-70312<br>
++1 (254) 228-5961
+</div>
 
-      <!-- Darryl -->
-      <div class="agent-card">
-        <img src="https://randomuser.me/api/portraits/men/73.jpg">
-        <h4>Darryl Meeks</h4>
-        <p>Assistant Bond Agent</p>
-        <p>License #TX-82457</p>
-        <a href="tel:+12546382185">+1 (254) 638-2185</a>
-      </div>
+<div class="agent-block">
+<strong>Sara Parker</strong><br>
+Assistant Bond Agent<br>
+License #TX-81109<br>
++1 (214) 774-2204
+</div>
 
-      <!-- Financial -->
-      <div class="agent-card financial-card">
-        <img src="https://randomuser.me/api/portraits/men/22.jpg">
-        <h4>Wes Jordan</h4>
-        <p>Chief Financial Administrator</p>
-        <p>License #TX-FIN-9901</p>
+<div class="agent-block">
+<strong>Darryl Meeks</strong><br>
+Assistant Bond Agent<br>
+License #TX-82457<br>
++1 (254) 638-2185
+</div>
 
-        <p style="margin-top:15px; font-weight:bold;">Payment Processing</p>
-        <a href="tel:+19728002340">+1 (972) 800-2340</a>
+</div>
 
-        <p style="margin-top:15px; font-weight:bold;">Payment Policy, Trouble & Returns</p>
-        <a href="tel:+19728005540">+1 (972) 800-5540</a>
-      </div>
+<div class="card">
+<h3>Financial Administration</h3>
 
-    </div>
+<strong>Wes Jordan</strong><br>
+Chief Financial Administrator<br>
+License #TX-FIN-9901<br><br>
 
-    <!-- Contact Form -->
-    <div class="form-section">
-      <h3>Request Immediate Assistance</h3>
+Payment Processing:<br>
++1 (972) 800-2340<br><br>
 
-      <form>
-        <input type="text" placeholder="Full Name" required>
-        <input type="tel" placeholder="Your Phone Number" required>
-        <input type="text" placeholder="Inmate Name (If Applicable)">
-        <textarea rows="4" placeholder="Brief Description of Situation"></textarea>
-        <button type="submit">Submit Request</button>
-      </form>
-    </div>
+Payment Policy, Trouble & Returns:<br>
++1 (972) 800-5540
+</div>
 
-  </div>
-</section>
+</div>
+
+<footer>
+Belton Bail Authority (A Rea Company)<br>
+Structured. Compliant. Accountable.
+</footer>
+
+</body>
+</html>
