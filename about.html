@@ -1,34 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About | Budget Bail Bonds®™</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
-body{font-family:Inter,sans-serif;margin:0;background:#f4f6f9;color:#1b1b1b;}
-header,footer{background:#0e1c36;color:white;padding:20px;text-align:center;}
-.section{max-width:1000px;margin:auto;padding:60px 20px;}
+:root{
+--primary:#0B1F3B;
+--accent:#1C3D7A;
+--gold:#C6A85B;
+--bg:#F3F6FA;
+}
+
+body{
+margin:0;
+font-family:'Inter',sans-serif;
+background:var(--bg);
+color:#1b1b1b;
+}
+
+header{
+background:var(--primary);
+color:white;
+padding:22px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+header h1{
+font-family:'Playfair Display',serif;
+font-size:20px;
+margin:0;
+}
+
+nav a{
+color:white;
+margin-left:25px;
+text-decoration:none;
+}
+
+nav a:hover{color:var(--gold);}
+
+.hero{
+background:linear-gradient(135deg,var(--primary),var(--accent));
+color:white;
+padding:80px 20px;
+text-align:center;
+}
+
+.section{
+max-width:1000px;
+margin:auto;
+padding:70px 20px;
+}
+
+.panel{
+background:white;
+padding:35px;
+border-radius:10px;
+box-shadow:0 12px 30px rgba(0,0,0,0.05);
+margin-bottom:30px;
+animation:fadeIn .8s ease;
+}
+
+footer{
+background:var(--primary);
+color:white;
+text-align:center;
+padding:40px 20px;
+font-size:14px;
+}
+
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(10px);}
+to{opacity:1;transform:translateY(0);}
+}
 </style>
 </head>
+
 <body>
 
-<header>Budget Bail Bonds®™</header>
+<header>
+<h1>Budget Bail Bonds®™</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+<a href="legal.html">Legal</a>
+</nav>
+</header>
 
-<div class="section">
-<h2>Corporate Governance</h2>
-<p>Privately directed leadership structure with disciplined oversight and compliance practices within Bell County.</p>
-
-<h2>Community & Rehabilitation Commitment</h2>
-<ul>
-<li>Rehabilitation placement referrals</li>
-<li>Mental health coordination assistance</li>
-<li>Faith-based community partnerships</li>
-</ul>
-
-<h2>Strategic Growth</h2>
-<p>Belton serves as the anchor region for controlled operational expansion.</p>
+<div class="hero">
+<h2>Corporate Structure & Mission</h2>
 </div>
 
-<footer>Belton Bail Authority (A Rea Company)</footer>
+<div class="section">
+
+<div class="panel">
+<h3>Governance</h3>
+<p>Budget Bail Bonds®™ operates under disciplined private oversight through Belton Bail Authority (A Rea Company). Leadership structure emphasizes compliance, financial responsibility, and ethical bail administration within Bell County jurisdiction.</p>
+</div>
+
+<div class="panel">
+<h3>Community Commitment</h3>
+<p>Our firm supports structured reintegration initiatives including rehabilitation referrals, mental health coordination, and faith-anchored community partnerships.</p>
+</div>
+
+<div class="panel">
+<h3>Strategic Direction</h3>
+<p>Belton operations serve as a controlled anchor for sustainable growth while maintaining localized accountability and service excellence.</p>
+</div>
+
+</div>
+
+<footer>
+Belton Bail Authority (A Rea Company)
+</footer>
 
 </body>
 </html>
