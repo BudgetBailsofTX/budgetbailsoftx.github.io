@@ -3,106 +3,136 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Budget Bail Bonds</title>
+<title>Budget Bail Bonds®™ | Belton, TX</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
+:root {
+  --primary:#0B1F3B;
+  --accent:#1C3D7A;
+  --cta:#2FA84F;
+  --gold:#C6A85B;
+  --bg:#F3F6FA;
+}
+
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f8;
-    color: #333;
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:#1b1b1b;
 }
 
 header {
-    background-color: #0a1f44;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background:var(--primary);
+  color:white;
+  padding:22px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 32px;
+  font-family:'Playfair Display',serif;
+  font-size:22px;
+  margin:0;
+  letter-spacing:.5px;
+}
+
+nav a {
+  color:white;
+  margin-left:25px;
+  text-decoration:none;
+  font-weight:500;
+}
+
+nav a:hover {
+  color:var(--gold);
 }
 
 .hero {
-    background-color: #132f63;
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
+  background:linear-gradient(135deg,var(--primary),var(--accent));
+  color:white;
+  text-align:center;
+  padding:110px 20px;
+  animation:fadeIn 1.2s ease;
 }
 
 .hero h2 {
-    margin-bottom: 10px;
+  font-family:'Playfair Display',serif;
+  font-size:40px;
+  margin-bottom:15px;
 }
 
-.call-button {
-    display: inline-block;
-    background-color: #28a745;
-    color: white;
-    padding: 15px 25px;
-    margin-top: 20px;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 5px;
+.cta {
+  display:inline-block;
+  margin-top:25px;
+  background:var(--cta);
+  color:white;
+  padding:16px 32px;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:600;
+  transition:.3s;
+}
+
+.cta:hover {
+  background:#279143;
 }
 
 .section {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: auto;
+  max-width:1100px;
+  margin:auto;
+  padding:80px 20px;
 }
 
 .section h3 {
-    color: #0a1f44;
+  color:var(--primary);
+  font-size:26px;
+  margin-bottom:20px;
 }
 
-.services {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+.card-grid {
+  display:flex;
+  flex-wrap:wrap;
+  gap:25px;
 }
 
-.service-box {
-    background: white;
-    padding: 20px;
-    flex: 1;
-    min-width: 250px;
-    border-radius: 5px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+.card {
+  background:white;
+  padding:28px;
+  border-radius:8px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.05);
+  flex:1;
+  min-width:280px;
+  transition:.3s;
 }
 
-.contact-form {
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    background-color: #0a1f44;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+.card:hover {
+  transform:translateY(-6px);
 }
 
 footer {
-    background-color: #0a1f44;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
+  background:var(--primary);
+  color:white;
+  text-align:center;
+  padding:40px 20px;
+  font-size:14px;
+}
+
+.disclaimer {
+  margin-top:15px;
+  font-size:12px;
+  opacity:.7;
+  max-width:900px;
+  margin-left:auto;
+  margin-right:auto;
+  line-height:1.5;
+}
+
+@keyframes fadeIn {
+  from {opacity:0;}
+  to {opacity:1;}
 }
 </style>
 </head>
@@ -110,23 +140,40 @@ footer {
 <body>
 
 <header>
-    <h1>Budget Bail Bonds</h1>
-    <p>Fast • Affordable • Confidential</p>
+<h1>Budget Bail Bonds®™</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+<a href="legal.html">Legal</a>
+</nav>
 </header>
 
 <section class="hero">
-    <h2>24/7 Bail Bond Services</h2>
-    <p>We make the release process simple, fast, and affordable.</p>
-    <a href="tel:+12542442059" class="call-button">Call Now: (254) 244-2059</a>
+<h2>Structured. Compassionate. Immediate.</h2>
+<p>Belton & Bell County 24/7 Release Coordination</p>
+<a href="tel:+12542442059" class="cta">(254) 244-2059</a>
 </section>
 
 <section class="section">
-    <h3>Our Services</h3>
-    <div class="services">
-        <div class="service-box">
-            <h4>County Jail Bonds</h4>
-            <p>Quick processing and same-day release assistance.</p>
-        </div>
-        <div class="service-box">
-            <h4>Flexible Payment Plans</h4>
-            <p>Affordable options tailored to
+<h3>Executive Leadership</h3>
+<div class="card-grid">
+<div class="card"><strong>Sol Rea</strong><br>Founder & Managing Director</div>
+<div class="card"><strong>Lesa Rae Rea</strong><br>Community Relations Director</div>
+<div class="card"><strong>General Manager</strong><br>County Liaison & Operations</div>
+</div>
+</section>
+
+<footer>
+1902 S Loop 121, Belton, TX 76513<br>
+BailBudgetsAtBellCOTX@consultant.com<br>
+Belton Bail Authority (A Rea Company)<br>
+
+<div class="disclaimer">
+Budget Bail Bonds®™ operates as a privately directed bail bond service within Bell County jurisdiction. All bonds are subject to approval, underwriting review, and compliance with applicable Texas statutes. Referral assistance for rehabilitation or mental health placement does not constitute medical or legal advice. Payment methods may be subject to verification and processing review prior to bond execution.
+</div>
+</footer>
+
+</body>
+</html>
