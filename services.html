@@ -1,46 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Services | Budget Bail Bonds®™</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
-body{font-family:Arial;margin:0;background:#f4f6f9;padding:40px;}
-h2{color:#0e1c36;}
-.section{margin-bottom:40px;}
+:root{
+--primary:#0B1F3B;
+--accent:#1C3D7A;
+--bg:#F3F6FA;
+--gold:#C6A85B;
+}
+
+body{margin:0;font-family:'Inter',sans-serif;background:var(--bg);}
+
+header{
+background:var(--primary);
+color:white;
+padding:22px 40px;
+display:flex;
+justify-content:space-between;
+}
+
+nav a{color:white;margin-left:20px;text-decoration:none;}
+nav a:hover{color:var(--gold);}
+
+.section{
+max-width:1000px;
+margin:auto;
+padding:70px 20px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 12px 30px rgba(0,0,0,0.05);
+margin-bottom:25px;
+transition:.3s;
+}
+
+.card:hover{transform:translateY(-5px);}
+
+footer{
+background:var(--primary);
+color:white;
+text-align:center;
+padding:40px 20px;
+}
 </style>
 </head>
+
 <body>
 
-<h1>Payment & Funding Methods</h1>
+<header>
+<div>Budget Bail Bonds®™</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+<a href="legal.html">Legal</a>
+</nav>
+</header>
 
 <div class="section">
-<h2>Mobile Banking (I.D. Verified)</h2>
-<p>Approved Platforms:</p>
-<ul>
-<li>PayPal®™</li>
-<li>Chime®™</li>
-<li>ApplePay®™</li>
-<li>Zelle®™</li>
-<li>CashApp®™</li>
-<li>Varo®™</li>
-<li>Venmo®™</li>
-</ul>
-<p>Government I.D. required. Funds must clear before bond execution.</p>
+
+<h2>Payment & Funding Methods</h2>
+
+<div class="card">
+<h3>Mobile Banking (I.D. Verified)</h3>
+<p>Approved platforms include PayPal®, Chime®, ApplePay®, Zelle®, CashApp®, Varo®, and Venmo® (subject to availability). Government-issued I.D. required. Funds must clear prior to bond filing.</p>
 </div>
 
-<div class="section">
-<h2>In-Store Cash Deposits</h2>
-<p>Barcode may be required. Receipt confirmation mandatory.</p>
+<div class="card">
+<h3>Retail Cash & Debit Funding</h3>
+<p>In-store deposits, reloadable debit options, and barcode-based funding supported. Receipt confirmation mandatory.</p>
 </div>
 
-<div class="section">
-<h2>Visa®™ & Mastercard®™</h2>
-<p>Cardholder verification required. Processing fees may apply.</p>
+<div class="card">
+<h3>Card Processing</h3>
+<p>Visa®™ & Mastercard®™ accepted subject to account review. Billing verification required. Processing fees may apply.</p>
 </div>
 
-<div class="section">
-<h2>Apple Cash Setup (Quick Guide)</h2>
-<p>Enable via Wallet → Add Money → Send via Wallet or Messages.</p>
+<div class="card">
+<h3>MoneyGram Transfers</h3>
+<p>Reference number and sender verification required prior to bond processing.</p>
 </div>
+
+</div>
+
+<footer>
+All payments subject to verification and underwriting approval.
+</footer>
 
 </body>
 </html>
